@@ -1,5 +1,8 @@
 import os
 from openai import OpenAI
+import sys, os
+sys.path.append(os.path.dirname(__file__))
+import imghdr
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from keep_alive import keep_alive
